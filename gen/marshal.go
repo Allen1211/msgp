@@ -222,7 +222,11 @@ func (m *marshalGen) gMap(s *Map) {
 	vname := s.Varname()
 	m.rawAppend(mapHeader, lenAsUint32, vname)
 	m.p.printf("\nfor %s, %s := range %s {", s.Keyidx, s.Validx, vname)
-	m.rawAppend(stringTyp, literalFmt, s.Keyidx)
+	if s.KeyTyp == "int" {
+		m.rawAppend(intTyp, literalFmt, s.Keyidx)
+	} else {
+		m.rawAppend(stringTyp, literalFmt, s.Keyidx)
+	}
 	m.ctx.PushVar(s.Keyidx)
 	next(m, s.Value)
 	m.ctx.Pop()
