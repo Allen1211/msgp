@@ -29,9 +29,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/tinylib/msgp/gen"
-	"github.com/tinylib/msgp/parse"
-	"github.com/tinylib/msgp/printer"
+	"github.com/Allen1211/msgp/gen"
+	"github.com/Allen1211/msgp/parse"
+	"github.com/Allen1211/msgp/printer"
 )
 
 var (

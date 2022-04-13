@@ -3,7 +3,7 @@ package parse
 import (
 	"sort"
 
-	"github.com/tinylib/msgp/gen"
+	"github.com/Allen1211/msgp/gen"
 )
 
 // This file defines when and how we

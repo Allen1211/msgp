@@ -7,7 +7,7 @@ This is a code generation tool and serialization library for [MessagePack](http:
 
 - Use Go as your schema language
 - Performance
-- [JSON interop](http://godoc.org/github.com/tinylib/msgp/msgp#CopyToJSON)
+- [JSON interop](http://godoc.org/github.com/Allen1211/msgp/msgp#CopyToJSON)
 - [User-defined extensions](http://github.com/tinylib/msgp/wiki/Using-Extensions)
 - Type safety
 - Encoding flexibility
